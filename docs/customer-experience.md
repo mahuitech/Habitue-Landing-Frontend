@@ -39,6 +39,9 @@ un clic no demuestra que se haya publicado una reseña.
 
 ## Siguiente paso
 
-Recibir wireframes para landing, registro, membresía/progreso y Wallet; confirmar
-estados y navegación. Después definir contratos de backend y desarrollar por
-verticales. Las carpetas preparadas no implican funcionalidades implementadas.
+Landing y registro implementados como vista previa a partir de las referencias
+recibidas el 18/11/2026. Confirmar los contratos propuestos en
+[endpoints pendientes](endpoints-pendientes/README.md), especialmente identidad,
+consentimientos y momento de consumo de recompensas. Después conectar el alta y
+la sesión, y desarrollar membresía, canje y Wallet por verticales.
+Ver [estado del frontend](frontend-status.md) para límites actuales.

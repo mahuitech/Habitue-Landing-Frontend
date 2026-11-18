@@ -47,7 +47,14 @@ interacción. No agregar dependencias o capas sin un uso concreto.
 
 ## Estado actual
 
-Base instalada, componentes reutilizables y página temporal. No existen todavía
-alta, persistencia, visitas, recuperación, reseñas ni integraciones Wallet.
-No se han creado endpoints, sesiones simuladas ni registros de clientes.
-Ver `docs/customer-experience.md` antes de desarrollar esos flujos.
+Landing y formulario de alta con branding por comercio. Ejemplos locales:
+http://localhost:3001/costra y http://localhost:3001/fresh-food.
+Los formularios validan datos pero no crean membresías ni los persisten.
+
+`HABITUE_API_BASE_URL` permite cargar marca/configuración en servidor desde el
+endpoint público propuesto. No definirla mantiene el modo de vista previa.
+Ver `.env.example`, [estado frontend](docs/frontend-status.md) y
+[endpoints pendientes](docs/endpoints-pendientes/README.md).
+
+Las pantallas de canje, Wallet, sesión y recuperación quedan pendientes de sus
+contratos. No se añaden integraciones ni credenciales del panel al cliente.

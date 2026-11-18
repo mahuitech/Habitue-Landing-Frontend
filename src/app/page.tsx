@@ -1,9 +1,6 @@
+import { redirect } from "next/navigation";
+
 export default function HomePage() {
-  return (
-    <main className="mx-auto flex min-h-dvh max-w-md flex-col justify-center gap-4 px-6 py-12">
-      <p className="text-sm font-medium text-primary">habitué</p>
-      <h1 className="text-3xl font-bold tracking-tight">El club de tu comercio</h1>
-      <p className="text-muted-foreground">Estamos preparando esta experiencia. Próximamente podrás acceder desde el NFC de tu comercio.</p>
-    </main>
-  );
+  if (!process.env.HABITUE_API_BASE_URL) redirect("/costra");
+  return <main className="message-screen mx-auto max-w-md min-h-dvh"><h1>Tu club te espera</h1><p>Acerca tu móvil al NFC de tu comercio para entrar en su club.</p></main>;
 }
